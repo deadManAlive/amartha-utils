@@ -1,3 +1,3 @@
-module github.com/deadManAlive/amartha-stuff/utils
+module github.com/deadManAlive/amartha-utils
 
 go 1.24.0
