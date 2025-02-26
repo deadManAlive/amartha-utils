@@ -12,7 +12,11 @@ func PrintSlice(s []int) {
 func PrintSlice2(s [][]int) {
 	for _, v := range s {
 		for _, w := range v {
-			fmt.Printf("%4d ", w)
+			if w == 0 {
+				fmt.Printf("%4s ", ".")
+			} else {
+				fmt.Printf("%4d ", w)
+			}
 		}
 		fmt.Println()
 	}
