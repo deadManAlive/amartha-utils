@@ -23,7 +23,7 @@ func PrintSlice2(s [][]int) {
 	fmt.Println()
 }
 
-func SqEmpMatGen(n int) [][]int {
+func EmptySquareMatrixGenerator(n int) [][]int {
 	mat := make([][]int, n)
 	for i := range n {
 		mat[i] = make([]int, n)
