@@ -30,3 +30,20 @@ func EmptySquareMatrixGenerator(n int) [][]int {
 	}
 	return mat
 }
+
+func EmptyMatrixGenerator(y, x int) [][]int {
+	mat := make([][]int, y)
+	for i := range y {
+		mat[i] = make([]int, x)
+	}
+	return mat
+}
+
+// embed other matrix inside other matrix (!!no bound checking!!)
+func EmbedMatrix(source, destination [][]int, istart, jstart int) {
+	for i, u := range source {
+		for j, v := range u {
+			destination[istart+i][jstart+j] = v
+		}
+	}
+}
